@@ -1,0 +1,31 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "acf/hero-section",
+    "title": "Hero Section",
+    "description": "A hero section with customizable background image",
+    "category": "design",
+    "icon": "cover-image",
+    "keywords": ["hero", "banner", "header"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/hero/hero.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": ["full", "wide"],
+        "mode": false,
+        "jsx": true
+    },
+    "example": {
+        "attributes": {
+            "mode": "preview",
+            "data": {
+                "background_image": "",
+                "title": "Welcome to our site",
+                "subtitle": "This is an example hero section",
+                "_is_preview": true
+            }
+        }
+    }
+}
